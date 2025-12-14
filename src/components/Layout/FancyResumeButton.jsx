@@ -15,7 +15,7 @@ const FancyResumeButton = () => {
 
       {/* Button */}
       <button
-        onClick={() => window.open('public/Adithya_Resume_6_12.pdf', '_blank')}
+        onClick={() => window.open(`${import.meta.env.BASE_URL}Adithya_Resume_6_12.pdf`,'_blank')}
         className="
           relative z-10
           px-8 py-3

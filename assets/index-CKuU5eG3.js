@@ -29,7 +29,7 @@ Error generating stack: `+h.message+`
         group-hover:opacity-100\r
         transition duration-500\r
         animate-gradient\r
-      `}),E.jsx("button",{onClick:()=>window.open("https://drive.google.com/file/d/1AmfDBSJJsG8AecC54shzAEMmE5dQhKXY/view?usp=sharing","_blank"),className:`\r
+      `}),E.jsx("button",{onClick:()=>window.open("public/Adithya_Resume_6_12.pdf","_blank"),className:`\r
           relative z-10\r
           px-8 py-3\r
           rounded-xl\r

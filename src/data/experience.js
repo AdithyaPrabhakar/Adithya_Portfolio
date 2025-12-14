@@ -1,0 +1,50 @@
+export const experiences = [
+  {
+    id: 1,
+    title: "Software Developer Intern",
+    company: "Teamlease Services Ltd.",
+    location: "India",
+    period: "Jul 2025 – Oct 2025",
+    description: [
+      "Completed hands-on training in full-stack web development using JavaScript, React, Node.js, Express, and MongoDB.",
+      "Designed and developed a Payroll Management System (EMS) using the MERN stack.",
+      "Implemented employee onboarding, role-based access for admins and employees, and secure salary record management.",
+      "Built payslip generation and formatting features, enabling employees to access and download salary documents.",
+      "Applied Git and GitHub for version control and collaborated using structured development workflows.",
+      "Implemented CI/CD pipelines to streamline development and deployment processes.",
+    ],
+    technologies: [
+      "React",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JavaScript",
+      "Git",
+      "GitHub",
+      "CI/CD",
+    ],
+  },
+
+  {
+    id: 2,
+    title: "WordPress Developer Intern",
+    company: "Dopetech Solutions",
+    location: "India",
+    period: "Apr 2025 – Jun 2025",
+    description: [
+      "Built and deployed a custom WordPress CMS website for a construction services client.",
+      "Implemented theme customization to match client branding and design requirements.",
+      "Developed and configured plugins to extend website functionality.",
+      "Performed SEO optimization to improve search visibility and page performance.",
+      "Tested and debugged the website to ensure cross-browser compatibility and responsiveness.",
+    ],
+    technologies: [
+      "WordPress",
+      "PHP",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "SEO",
+    ],
+  },
+];

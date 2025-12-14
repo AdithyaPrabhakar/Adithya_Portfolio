@@ -15,7 +15,7 @@ const FancyResumeButton = () => {
 
       {/* Button */}
       <button
-        onClick={() => window.open('https://drive.google.com/file/d/1AmfDBSJJsG8AecC54shzAEMmE5dQhKXY/view?usp=sharing', '_blank')}
+        onClick={() => window.open('public/Adithya_Resume_6_12.pdf', '_blank')}
         className="
           relative z-10
           px-8 py-3

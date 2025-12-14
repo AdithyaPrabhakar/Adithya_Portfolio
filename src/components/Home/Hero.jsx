@@ -107,7 +107,7 @@ const Hero = () => {
             <PixelTransition
               firstContent={
                 <img
-                  src="public/myphoto.jpeg"
+                  src="https://adithyaprabhakar.github.io/Adithya_Portfolio/myphoto.jpeg"
                   alt="Adithya Prabhakar"
                   className="w-full h-full object-cover"
                 />

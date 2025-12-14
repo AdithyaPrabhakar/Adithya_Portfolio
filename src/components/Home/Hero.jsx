@@ -107,7 +107,7 @@ const Hero = () => {
             <PixelTransition
               firstContent={
                 <img
-                  src="https://provincial-lavender-psy7tafat3-d2d753c80l.edgeone.dev/myphoto.jpeg"
+                  src="myphoto.jpeg"
                   alt="Adithya Prabhakar"
                   className="w-full h-full object-cover"
                 />

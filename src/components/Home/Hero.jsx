@@ -120,40 +120,44 @@ const Hero = () => {
           {/* RIGHT CONTENT – PIXEL TRANSITION */}
 <div
   className="
-    rainbow
     flex justify-center
     lg:justify-end
     mt-16 lg:mt-0
   "
 >
-  {/* Size controller (prevents overflow on mobile) */}
+  {/* Rainbow border wrapper */}
   <div
     className="
+      rainbow
       w-[260px] h-[340px]
       sm:w-[300px] sm:h-[400px]
       md:w-[340px] md:h-[440px]
       lg:w-[380px] lg:h-[500px]
+      flex items-center justify-center
     "
   >
-    <PixelTransition
-      firstContent={
-        <img
-          src={`${import.meta.env.BASE_URL}myphoto.jpeg`}
-          alt="Adithya Prabhakar"
-          className="w-full h-full object-cover rounded-xl"
-        />
-      }
-      secondContent={
-        <div className="w-full h-full grid place-items-center bg-[#111] rounded-xl">
-          <p className="text-3xl font-black text-white">Hey!</p>
-        </div>
-      }
-      gridSize={22}
-      pixelColor="#6d6affff"
-      once={false}
-      animationStepDuration={0.4}
-      className="custom-pixel-card"
-    />
+    {/* Force PixelTransition to fill rainbow */}
+    <div className="w-full h-full">
+      <PixelTransition
+        firstContent={
+          <img
+            src={`${import.meta.env.BASE_URL}myphoto.jpeg`}
+            alt="Adithya Prabhakar"
+            className="w-full h-full object-cover"
+          />
+        }
+        secondContent={
+          <div className="w-full h-full grid place-items-center bg-[#111]">
+            <p className="text-3xl font-black text-white">Hey!</p>
+          </div>
+        }
+        gridSize={22}
+        pixelColor="#6d6affff"
+        once={false}
+        animationStepDuration={0.4}
+        className="w-full h-full"
+      />
+    </div>
   </div>
 </div>
 

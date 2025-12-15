@@ -67,63 +67,93 @@ const Hero = () => {
               
             </div>
             {/* STATS */}
-            <div className="mt-10 flex gap-15 ">
-              <div>
-                <p className="text-4xl font-bold">10+</p>
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Projects
-                </p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold">.6</p>
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Years of Internship Experience
-                </p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold">100%</p>
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Dedication
-                </p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold">100%</p>
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Hardwork
-                </p>
-              </div>
-              <div>
-                <p className="text-4xl font-bold">100%</p>
-                <p className="text-sm text-gray-400 uppercase tracking-wide">
-                  Humorous
-                </p>
-              </div>
-            </div>
+            <div
+  className="
+    mt-12
+    grid grid-cols-2
+    sm:grid-cols-3
+    lg:grid-cols-5
+    gap-8
+    max-w-xl lg:max-w-none
+  "
+>
+  <div>
+    <p className="text-3xl md:text-4xl font-bold">10+</p>
+    <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">
+      Projects
+    </p>
+  </div>
+
+  <div>
+    <p className="text-3xl md:text-4xl font-bold">0.6</p>
+    <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">
+      Internship Experience
+    </p>
+  </div>
+
+  <div>
+    <p className="text-3xl md:text-4xl font-bold">100%</p>
+    <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">
+      Dedication
+    </p>
+  </div>
+
+  <div>
+    <p className="text-3xl md:text-4xl font-bold">100%</p>
+    <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">
+      Hard Work
+    </p>
+  </div>
+
+  <div>
+    <p className="text-3xl md:text-4xl font-bold">100%</p>
+    <p className="text-xs sm:text-sm text-gray-400 uppercase tracking-wide">
+      Humor
+    </p>
+  </div>
+</div>
+
             <div className='h-5'></div>
           </motion.div>
 
           {/* RIGHT CONTENT – PIXEL TRANSITION */}
-          <div  className="rainbow flex justify-center lg:justify-end ml-60">
-            <PixelTransition
-              firstContent={
-                <img
-                  src="myphoto.jpeg"
-                  alt="Adithya Prabhakar"
-                  className="w-full h-full object-cover"
-                />
-              }
-              secondContent={
-                <div className="w-full h-full grid place-items-center bg-[#111]">
-                  <p className="text-4xl font-black text-white">Hey!</p>
-                </div>
-              }
-              gridSize={22}
-              pixelColor="#6d6affff"
-              once={false}
-              animationStepDuration={0.4}
-              className="custom-pixel-card"
-            />
-          </div>
+          <div
+  className="
+    flex justify-center
+    lg:justify-end
+    mt-16 lg:mt-0
+  "
+>
+  <div
+    className="
+      w-[260px] h-[340px]
+      sm:w-[300px] sm:h-[400px]
+      md:w-[340px] md:h-[440px]
+      lg:w-[380px] lg:h-[500px]
+    "
+  >
+    <PixelTransition
+      firstContent={
+        <img
+          src={`${import.meta.env.BASE_URL}myphoto.jpeg`}
+          alt="Adithya Prabhakar"
+          className="w-full h-full object-cover rounded-xl"
+        />
+      }
+      secondContent={
+        <div className="w-full h-full grid place-items-center bg-[#111] rounded-xl">
+          <p className="text-3xl font-black text-white">Hey!</p>
+        </div>
+      }
+      gridSize={22}
+      pixelColor="#6d6affff"
+      once={false}
+      animationStepDuration={0.4}
+      className="custom-pixel-card"
+    />
+  </div>
+</div>
+
 
         
 

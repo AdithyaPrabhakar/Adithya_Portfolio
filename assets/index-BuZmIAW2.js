@@ -51,16 +51,17 @@ Error generating stack: `+h.message+`
     gap-8\r
     max-w-xl lg:max-w-none\r
   `,children:[E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"10+"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Projects"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"0.6"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Internship Experience"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"100%"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Dedication"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"100%"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Hard Work"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"100%"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Humor"})]})]}),E.jsx("div",{className:"h-5"})]}),E.jsx("div",{className:`\r
-    rainbow\r
     flex justify-center\r
     lg:justify-end\r
     mt-16 lg:mt-0\r
   `,children:E.jsx("div",{className:`\r
+      rainbow\r
       w-[260px] h-[340px]\r
       sm:w-[300px] sm:h-[400px]\r
       md:w-[340px] md:h-[440px]\r
       lg:w-[380px] lg:h-[500px]\r
-    `,children:E.jsx(S7,{firstContent:E.jsx("img",{src:"/Adithya_Portfolio/myphoto.jpeg",alt:"Adithya Prabhakar",className:"w-full h-full object-cover rounded-xl"}),secondContent:E.jsx("div",{className:"w-full h-full grid place-items-center bg-[#111] rounded-xl",children:E.jsx("p",{className:"text-3xl font-black text-white",children:"Hey!"})}),gridSize:22,pixelColor:"#6d6affff",once:!1,animationStepDuration:.4,className:"custom-pixel-card"})})})]})})]}),Js=({children:e,className:t="",hover:n=!1,padding:r=!0})=>E.jsx("div",{className:`
+      flex items-center justify-center\r
+    `,children:E.jsx("div",{className:"w-full h-full",children:E.jsx(S7,{firstContent:E.jsx("img",{src:"/Adithya_Portfolio/myphoto.jpeg",alt:"Adithya Prabhakar",className:"w-full h-full object-cover"}),secondContent:E.jsx("div",{className:"w-full h-full grid place-items-center bg-[#111]",children:E.jsx("p",{className:"text-3xl font-black text-white",children:"Hey!"})}),gridSize:22,pixelColor:"#6d6affff",once:!1,animationStepDuration:.4,className:"w-full h-full"})})})})]})})]}),Js=({children:e,className:t="",hover:n=!1,padding:r=!0})=>E.jsx("div",{className:`
         rounded-2xl bg-white border border-gray-200
         ${r?"p-6":""}
         ${n?"transition-all duration-300 hover:-translate-y-1 hover:shadow-md":""}

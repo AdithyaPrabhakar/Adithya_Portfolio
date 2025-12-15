@@ -51,6 +51,7 @@ Error generating stack: `+h.message+`
     gap-8\r
     max-w-xl lg:max-w-none\r
   `,children:[E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"10+"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Projects"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"0.6"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Internship Experience"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"100%"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Dedication"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"100%"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Hard Work"})]}),E.jsxs("div",{children:[E.jsx("p",{className:"text-3xl md:text-4xl font-bold",children:"100%"}),E.jsx("p",{className:"text-xs sm:text-sm text-gray-400 uppercase tracking-wide",children:"Humor"})]})]}),E.jsx("div",{className:"h-5"})]}),E.jsx("div",{className:`\r
+    rainbow\r
     flex justify-center\r
     lg:justify-end\r
     mt-16 lg:mt-0\r

@@ -117,13 +117,16 @@ const Hero = () => {
           </motion.div>
 
           {/* RIGHT CONTENT – PIXEL TRANSITION */}
-          <div
+          {/* RIGHT CONTENT – PIXEL TRANSITION */}
+<div
   className="
+    rainbow
     flex justify-center
     lg:justify-end
     mt-16 lg:mt-0
   "
 >
+  {/* Size controller (prevents overflow on mobile) */}
   <div
     className="
       w-[260px] h-[340px]
@@ -153,6 +156,7 @@ const Hero = () => {
     />
   </div>
 </div>
+
 
 
         

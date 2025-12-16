@@ -10,7 +10,7 @@ const openProject = () => {
   const base = import.meta.env.BASE_URL;
 
   window.open(
-    `${base}projects/${project.slug}`,
+    `${import.meta.env.BASE_URL}#/projects/${project.slug}`,
     '_blank',
     'noopener,noreferrer'
   );

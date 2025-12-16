@@ -12,9 +12,9 @@ link.href =
 document.head.appendChild(link);
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter basename="/Adithya_Portfolio">
+<StrictMode>
+    <HashRouter>
       <App />
-    </BrowserRouter>
+    </HashRouter>
   </StrictMode>
 );

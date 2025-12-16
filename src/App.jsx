@@ -1,7 +1,10 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { Routes, Route, useLocation } from 'react-router-dom';
+
 import Header from './components/Layout/Header';
 import Footer from './components/Layout/Footer';
+
 import Hero from './components/Home/Hero';
 import About from './components/Home/About';
 import Skills from './components/Home/Skills';
@@ -9,51 +12,63 @@ import Projects from './components/Home/Projects';
 import Experience from './components/Sections/Experience';
 import Education from './components/Sections/Education';
 import ContactForm from './components/Home/ContactForm';
+
+import ProjectDetail from './components/Projects/ProjectDetail';
+
 import './App.css';
 
+const pageTransition = {
+  initial: { opacity: 0, y: 20 },
+  animate: { opacity: 1, y: 0 },
+  exit: { opacity: 0, y: -20 },
+  transition: { duration: 0.5 },
+};
+
+const HomePage = () => (
+  <>
+    <Hero />
+    <About />
+    <Skills />
+    <Projects />
+    <Experience />
+    <Education />
+    <ContactForm />
+  </>
+);
+
 function App() {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 20 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
-  };
+  const location = useLocation();
 
   return (
-    <AnimatePresence>
-      <div className="App">
-        <Header />
-        
-        <main>
-          <Hero />
-          
-          <motion.div {...fadeInUp}>
-            <About />
-          </motion.div>
-          
-          <motion.div {...fadeInUp}>
-            <Skills />
-          </motion.div>
-          
-          <motion.div {...fadeInUp}>
-            <Projects />
-          </motion.div>
-          
-          <motion.div {...fadeInUp}>
-            <Experience />
-          </motion.div>
-          
-          <motion.div {...fadeInUp}>
-            <Education />
-          </motion.div>
-          
-          <motion.div {...fadeInUp}>
-            <ContactForm />
-          </motion.div>
-        </main>
-        
-        <Footer />
-      </div>
-    </AnimatePresence>
+    <div className="App">
+      <Header />
+
+      <AnimatePresence mode="wait">
+        <Routes location={location} key={location.pathname}>
+          {/* Home */}
+          <Route
+            path="/"
+            element={
+              <motion.main {...pageTransition}>
+                <HomePage />
+              </motion.main>
+            }
+          />
+
+          {/* Project Details */}
+          <Route
+            path="/projects/:slug"
+            element={
+              <motion.main {...pageTransition}>
+                <ProjectDetail />
+              </motion.main>
+            }
+          />
+        </Routes>
+      </AnimatePresence>
+
+      <Footer />
+    </div>
   );
 }
 

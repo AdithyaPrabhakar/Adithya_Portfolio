@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FiFilter, FiChevronRight } from 'react-icons/fi';
+import { FiFilter, FiChevronRight, FiChevronUp } from 'react-icons/fi';
 import { projects } from '../../data/projects';
 import ProjectCard from '../UI/ProjectCard';
 import Button from '../UI/Button';
@@ -27,7 +27,10 @@ const Projects = () => {
   const visibleProjects = filteredProjects.slice(0, visibleCount);
 
   const loadMore = () => {
-    setVisibleCount(prev => prev + 3);
+    setVisibleCount(prev => prev + 6);
+  };
+    const showLess = () => {
+    setVisibleCount(prev => prev - 6);
   };
 
   return (
@@ -101,6 +104,22 @@ const Projects = () => {
             </Button>
           </div>
         )}
+
+        {/* Show less Button */}
+        {visibleCount > 3 && (
+          <div className="text-center">
+            <Button
+              variant="outline"
+              size="large"
+              onClick={showLess}
+              className="flex items-center justify-center gap-2 mx-auto p-2"
+            >
+              Show Less 
+              <FiChevronUp />
+            </Button>
+          </div>
+        )}
+
 
         {/* Stats */}
         <motion.div

@@ -5,9 +5,11 @@ const Card = ({
   className = '',
   hover = false,
   padding = true,
+  ...props   // 👈 IMPORTANT: capture events like onClick
 }) => {
   return (
     <div
+      {...props} // 👈 IMPORTANT: forward events to DOM
       className={`
         rounded-2xl bg-white border border-gray-200
         ${padding ? 'p-6' : ''}
